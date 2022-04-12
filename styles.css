@@ -1,0 +1,26 @@
+body {
+    display: grid;
+    margin: 0;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.sidebar {
+    background-color: #9b59b6;
+    grid-row: 1 / span 2;
+}
+.header {
+    background-color: #3498db;
+    grid-column: 2 / span 2;
+}
+
+.project-content {
+    background-color: #c0392b;
+}
+
+.announcement-content {
+    background-color: #27ae60;
+}
+
+.trending-content {
+    background-color: #f39c12;
+}
