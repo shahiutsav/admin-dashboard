@@ -3,22 +3,47 @@ body {
     margin: 0;
     grid-template-columns: 20vw 60vw;
     grid-auto-rows: 15vh auto;
+    font-family: "Roboto", sans-serif;
 }
 
 /* Sidebar */
 .sidebar {
+    color: white;
     box-sizing: border-box;
-    padding-left: 20px;
+    padding-left: 30px;
     width: 20vw;
-    background-color: #9b59b6;
+    background-color: #2c3e50;
     grid-row: 1 / span 2;
     height: 100vh;
 }
 
+.sidebar > h3 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.sidebar > h3 > img {
+    width: 32px;
+}
+
 .sidebar > ul {
+    margin-top: 55px;
     list-style: none;
     padding: 0;
     line-height: 2rem;
+}
+
+.sidebar > ul > li {
+    margin-bottom: 8px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    font-weight: 700;
+}
+
+.sidebar > ul > li > img {
+    width: 18px;
 }
 
 /* Header */
