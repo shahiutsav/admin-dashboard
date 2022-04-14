@@ -2,8 +2,10 @@ body {
     display: grid;
     margin: 0;
     grid-template-columns: 20vw repeat(2, 1fr);
+    grid-auto-rows: 15vh;
 }
 
+/* Sidebar */
 .sidebar {
     box-sizing: border-box;
     padding-left: 20px;
@@ -19,10 +21,39 @@ body {
     line-height: 2rem;
 }
 
+/* Header */
 .header {
     background-color: #3498db;
     grid-column: 2 / span 2;
 }
+
+/* Search bar */
+.search-container {
+    display: flex;
+    height: 3vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-container {
+    width: 70%;
+    gap: 8px;
+}
+
+.left-container > input {
+    width: 70%;
+}
+
+.right-container {
+    display: flex;
+    gap: 8px;
+    margin-right: 10px;
+}
+
+.admin-control {
+    display: flex;
+}
+
 .project-content {
     background-color: #c0392b;
 }
