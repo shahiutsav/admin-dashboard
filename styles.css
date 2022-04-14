@@ -35,6 +35,7 @@ body {
 }
 
 .sidebar > ul > li {
+    cursor: pointer;
     margin-bottom: 8px;
     display: flex;
     gap: 16px;
@@ -84,6 +85,11 @@ body {
     align-items: center;
 }
 
+.right-container > div,
+.right-container > img {
+    cursor: pointer;
+}
+
 .profile-picture {
     display: flex;
     overflow: hidden;
@@ -99,6 +105,7 @@ body {
 
 .profile-picture > img {
     width: 100%;
+    cursor: pointer;
 }
 
 .right-container > div:last-child {
