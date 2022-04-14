@@ -86,8 +86,8 @@ body {
 
 .profile-picture {
     display: flex;
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     overflow: hidden;
     border-radius: 50%;
     align-items: center;
