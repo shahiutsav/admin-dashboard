@@ -1,8 +1,8 @@
 body {
     display: grid;
     margin: 0;
-    grid-template-columns: 20vw 60vw;
-    grid-auto-rows: 20vh auto;
+    grid-template-columns: auto 60vw;
+    grid-auto-rows: min-content 1fr;
     font-family: "Roboto", sans-serif;
 }
 
@@ -86,12 +86,15 @@ body {
 
 .profile-picture {
     display: flex;
-    height: 35px;
-    width: 35px;
     overflow: hidden;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
+}
+
+.right-container > .profile-picture {
+    height: 35px;
+    width: 35px;
 }
 
 .profile-picture > img {
@@ -106,8 +109,10 @@ body {
 .admin-control {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 8px;
     column-gap: 20rem;
+    margin-bottom: 16px;
 }
 
 .admin-control > .left-container {
@@ -115,8 +120,31 @@ body {
     margin-left: 3rem;
 }
 
-.welcome > div:nth-child(2) {
+.admin-control > .left-container > .profile-picture {
+    height: 60px;
+    width: 60px;
+}
+
+.welcome > div:first-child {
+    font-size: calc(8px + 0.35rem);
+    font-weight: 600;
+}
+
+.welcome > div:last-child {
+    font-size: calc(20px + 0.2rem);
     margin-top: 8px;
+    font-weight: 900;
+}
+
+.admin-control > .right-container > button {
+    width: 6rem;
+    background-color: #2980b9;
+    border: none;
+    cursor: pointer;
+    padding: 0.6rem 0;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #ecf0f1;
 }
 
 /* Main content */
