@@ -157,4 +157,22 @@ body {
 /* Trending */
 .trending-content {
     background-color: #1abc9c;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 12px 8px 0;
+}
+
+.trending-content > h3 {
+    padding: 0;
+    margin: 8px 0;
+}
+
+.trending-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.trending-item > img {
+    grid-row: 1 / span 2;
 }
