@@ -119,12 +119,18 @@ body {
     padding: 5px;
 }
 
+/* Right side bar */
+.right-sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Announcements */
 .announcement-content {
     box-sizing: border-box;
     margin: 0;
     background-color: #27ae60;
-    padding: 16px 8px;
+    padding: 16px 8px 0;
 }
 
 .announcement-content > h3 {
@@ -133,13 +139,14 @@ body {
 }
 
 .announcement-list {
+    box-sizing: border-box;
     background-color: #bdc3c7;
+    padding: 2px 8px;
 }
 
 .announcement-item {
+    margin: 12px 8px;
     box-sizing: border-box;
-    margin: 24px 8px;
-    padding: 2px 8px;
 }
 
 .announcement-item > h4,
@@ -147,6 +154,7 @@ body {
     margin: 0;
 }
 
+/* Trending */
 .trending-content {
-    background-color: #f39c12;
+    background-color: #1abc9c;
 }
