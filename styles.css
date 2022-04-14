@@ -119,8 +119,32 @@ body {
     padding: 5px;
 }
 
+/* Announcements */
 .announcement-content {
+    box-sizing: border-box;
+    margin: 0;
     background-color: #27ae60;
+    padding: 16px 8px;
+}
+
+.announcement-content > h3 {
+    padding: 0;
+    margin: 8px 0;
+}
+
+.announcement-list {
+    background-color: #bdc3c7;
+}
+
+.announcement-item {
+    box-sizing: border-box;
+    margin: 24px 8px;
+    padding: 2px 8px;
+}
+
+.announcement-item > h4,
+.announcement-item > p {
+    margin: 0;
 }
 
 .trending-content {
